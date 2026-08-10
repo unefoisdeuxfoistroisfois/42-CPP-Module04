@@ -5,10 +5,13 @@
 #include <iostream>
 
 class Cat : public Animal {
-  protected:
-    std::string type;
 
   public:
+    Cat();
+    Cat(const Cat &src);
+    Cat &operator=(const Cat &rhs);
+    
+    ~Cat();
 
 };
 
