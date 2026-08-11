@@ -4,11 +4,10 @@
 NAME		= open
 CXX     	= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
-SRC     	= main.cpp ClapTrap.cpp
+SRC     	= main.cpp Animal.cpp Dog.cpp Cat.cpp
 OBJ     	= $(SRC:.cpp=.o)
 RM      	= rm -f
 
-# Couleurs
 NC  	= \033[0m
 GREEN	= \033[1;32m
 RED		= \033[1;31m

@@ -5,6 +5,8 @@
 #include <iostream>
 
 class Cat : public Animal {
+  private:
+    std::string type;
 
   public:
     Cat();
@@ -12,6 +14,8 @@ class Cat : public Animal {
     Cat &operator=(const Cat &rhs);
     
     ~Cat();
+
+    void makeSound();
 
 };
 
