@@ -6,7 +6,6 @@
 
 class Cat : public Animal {
   private:
-    std::string type;
 
   public:
     Cat();
@@ -15,7 +14,7 @@ class Cat : public Animal {
     
     ~Cat();
 
-    void makeSound();
+    void  makeSound() const;
 
 };
 

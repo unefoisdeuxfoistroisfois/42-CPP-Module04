@@ -5,7 +5,7 @@
 
 class Animal {
   protected:
-    std::string type;
+    std::string _type;
 
   public:
 		Animal();
@@ -13,6 +13,9 @@ class Animal {
 		Animal &operator=(const Animal &rhs);
 
     ~Animal();
+
+    void  makeSound() const;
+    std::string getType() const;
 
 };
 

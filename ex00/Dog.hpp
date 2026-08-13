@@ -6,7 +6,6 @@
 
 class Dog : public Animal {
   private:
-    std::string type;
 
   public:
     Dog();
@@ -14,6 +13,8 @@ class Dog : public Animal {
     Dog &operator=(const Dog &rhs); //l'objet est deja existant
 
     ~Dog();
+
+    void  makeSound() const;
 
 };
 
