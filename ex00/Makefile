@@ -1,7 +1,7 @@
 .PHONY : all clean fclean re
 .SILENT :
 
-NAME		= open
+NAME			= ex00
 CXX     	= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 SRC     	= main.cpp Animal.cpp Dog.cpp Cat.cpp
