@@ -31,6 +31,6 @@ void	Animal::makeSound() const{
 	std::cout << "This animal doesn't make sound" << std::endl;
 }
 
-std::string	Animal::getType() const{ // a l'interieur de getType je ne toucherais a rien.
+std::string	Animal::getType() const{ // en français -> (const) a l'interieur de getType je ne toucherais a rien
 	return (this->_type);
 }
