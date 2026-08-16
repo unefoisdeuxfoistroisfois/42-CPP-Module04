@@ -5,7 +5,7 @@ Dog::Dog() : Animal(){
 	std::cout << "Dog default constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog &src) : Animal(){
+Dog::Dog(const Dog &src) : Animal(src){
 
 	std::cout << "Dog copy constructor called" << std::endl;
 	*this = src;
