@@ -1,6 +1,8 @@
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
 
 int main(){
 
@@ -33,6 +35,8 @@ int main(){
   delete i; // on détruit l'animal, le compilateur regard le vrai animal pointeur ~Dog() ensuite ~Animal()
   delete j;
 
+  std::cout << std::endl;
+
   // Sa permet de traiter les animaux de maniere uniforme en gros on va mettre l'adresse de Dog dans Animal pour mieux le manipuler
   //Animal* zoo[3];
   //zoo[0] = new Dog();
@@ -44,6 +48,14 @@ int main(){
 
  // Dog dog;            // un vrai Dog, sur la STACK contrairemetn a ce main qui utlise la HEAP avec new
  // dog.makeSound();    // Waf
+
+ std::cout << "=== WRONG === " << std::endl;
+ const WrongAnimal* wrong = new WrongCat();
+ std::cout << wrong->getType() << " " << std::endl;
+ wrong->makeSound(); // il va faire le sont du parent
+
+ delete wrong;
+ // Le delete virtual appel le obn destructeur
 
   return (0);
   }
