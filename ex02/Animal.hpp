@@ -14,7 +14,7 @@ class Animal {
 
     virtual ~Animal();
 
-    virtual void  makeSound() const;
+    virtual void  makeSound() const = 0; // rends la fonction virtuelle pure, si il y'a au moin une fvp alors la classe devient abstraite masi je dois redefinir chez les enfant
     std::string getType() const;
 
 };
