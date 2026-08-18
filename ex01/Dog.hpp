@@ -2,10 +2,12 @@
 #define DOG_HPP
 
 #include "Animal.hpp"
+#include "Brain.hpp"
 #include <iostream>
 
 class Dog : public Animal {
   private:
+    Brain* _brain; // pointeur vers Brain car l'ecole veut qeu on manipule les allcoation dynamique
 
   public:
     Dog();
@@ -15,6 +17,7 @@ class Dog : public Animal {
     ~Dog();
 
     void  makeSound() const;
+    Brain* ft_getBrain() const;
 
 };
 
