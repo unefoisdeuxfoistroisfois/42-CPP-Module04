@@ -4,7 +4,6 @@
 
 int main()
 {
-
   int index = 0;
   int sizeAnimals = 10;
   const Animal* arrayAnimals[10];
@@ -51,5 +50,14 @@ int main()
 //  delete j;//should not create a leak
 //  delete i;
 
+// Teste pour la classe abstraite
+/*
+  //v1
+  Animal animal;
+
+  //v2
+  Animal *animal = new Animal();
+  delete (animal);
+*/
   return 0;
 }
