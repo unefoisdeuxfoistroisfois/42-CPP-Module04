@@ -8,7 +8,7 @@ Cure::Cure(const Cure &src) : AMateria(src){
 	std::cout << "Cure copy constructor called" << std::endl;
 }
 
-Cure &Cure::operator=(const Ice &rhs){
+Cure &Cure::operator=(const Cure &rhs){
 	std::cout << "Cure assignment operator called" << std::endl;
 	if (this != &rhs){
 		AMateria::operator=(rhs);
@@ -29,7 +29,7 @@ AMateria *Cure::clone() const{
 	*/
 
 	/* 2) Operator= 
-	Cure* res = new Ice();
+	Cure* res = new Cure();
 	*res = *this;
 	return (res)
 	*/
