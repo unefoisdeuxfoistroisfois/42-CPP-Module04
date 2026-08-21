@@ -2,12 +2,13 @@
 
 AMateria::AMateria(){
 	std::cout << "AMateria constructor called" << std::endl;
+
 	this->_type = "Default";
 }
 
 // Ecole
 AMateria::AMateria(std::string const &type){
-	std::cout << "AMateria constructor called" << std::endl;
+	std::cout << "AMateria copy constructor called" << std::endl;
 
 	this->_type = _type;
 }
