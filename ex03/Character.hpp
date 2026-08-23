@@ -1,7 +1,7 @@
 #ifndef CHARACTER_HPP
 #define CHARACTER_HPP
 
-#include "Character.hpp"
+#include "ICharacter.hpp"
 #include "AMateria.hpp"
 #include <string>
 
@@ -17,6 +17,14 @@ class Character : public ICharacter{
 		Character &operator=(const Character &rhs);
 		~Character();
 
+		// ICharactere
+		// get set
+		const std::string &getName() const;
+
+		// fonctions 
+		void equip(AMateria *m); //equiper
+		void unequip(int idx); //déséquiper
+		void use(int idx, ICharacter &target);
 };
 
 #endif
