@@ -8,9 +8,9 @@ AMateria::AMateria(){
 
 // Ecole
 AMateria::AMateria(std::string const &type){
-	std::cout << "AMateria copy constructor called" << std::endl;
+	std::cout << "AMateria parameterized constructor called" << std::endl;
 
-	this->_type = _type;
+	this->_type = type;
 }
 
 AMateria::AMateria(const AMateria &src){

@@ -1,9 +1,9 @@
 #ifndef AMATERIA_HPP
 #define AMATERIA_HPP
 
+//#include "ICharacter.hpp" pas besoin declaration ciruculaire
 #include <iostream>
 #include <string>
-#include "ICharacter.hpp"
 
 class ICharacter; // Car sa casse le cercle des 2 classe qui on besion l'une de l'autre
 
