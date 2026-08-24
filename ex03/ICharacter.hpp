@@ -2,7 +2,7 @@
 #define ICHARACTER_HPP
 
 //#include "AMateria.hpp"
-#include <string.h>
+#include <string>
 
 class AMateria;
 

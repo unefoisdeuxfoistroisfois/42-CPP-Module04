@@ -23,9 +23,8 @@ Ice::~Ice(){
 }
 
 AMateria *Ice::clone() const{
-	/* 1) constructeur de copie
+	/* 1) constructeur de copie */
 	return (new Ice(*this));
-	*/
 
 	/* 2) Operator= 
 	Ice* res = new Ice();
@@ -33,9 +32,10 @@ AMateria *Ice::clone() const{
 	return (res)
 	*/
 
-	/* 3) constructeur de base */
+	/* 3) constructeur de base
 	Ice *res = new Ice();
 	return (res); //conversion de Ice* en AMaterie* car elle herite
+	*/
 }
 
 void	Ice::use(ICharacter &target){

@@ -4,10 +4,10 @@
 NAME			= ex03
 CXX     	= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
-SRC     	= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp
+SRC     	= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
 OBJ     	= $(SRC:.cpp=.o)
 RM      	= rm -f
-kk
+
 NC  	= \033[0m
 GREEN	= \033[1;32m
 RED		= \033[1;31m

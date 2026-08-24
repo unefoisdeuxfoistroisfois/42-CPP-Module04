@@ -68,6 +68,14 @@ void Character::equip(AMateria *m){
 		return ;
 	}
 
+	for (int i = 0; i < 4; i++)
+	{
+	  if (this->_inventory[i] == m){
+
+	  	return ;
+		}
+	}
+
 	for (int i = 0; i < 4; i++){
 		if (this->_inventory[i] == NULL){
 			this->_inventory[i] = m;
@@ -75,24 +83,21 @@ void Character::equip(AMateria *m){
 			return ; // Dés que c'est ranger on quitte
 		}
 	}
-	std::cout << "Invertory is full" << std::endl;
 }
 
 // Cette fonctione ne doit pas detruite masi juste rendre NULL et ensuite detruit dans le main
 void Character::unequip(int idx){
 	if (idx < 0 || idx > 3){
-		std::cout << "Invalide index" <<std::endl;
 		
 		return ;
 	}
 
 	if (this->_inventory[idx] == NULL){
-		std::cout << "Inventory slot is empty" <<std::endl;
 
 		return ;
 	}
 
-	this->_inventory[idx] = NULL; //permet de garde l'adress
+	this->_inventory[idx] = NULL; // On rend NULL mais la variable exterieur (main) lui converse l'adresse
 }
 
 void Character::use(int idx, ICharacter &target){
